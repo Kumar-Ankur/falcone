@@ -1,0 +1,70 @@
+.section-distance {
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: animation 2s;
+
+  &__1 {
+    display: inline-block;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 5rem;
+    top: -14rem;
+    background-image: linear-gradient(
+      to right,
+      $color-tertiary-light,
+      $color-tertiary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: distanceAnimation 2s;
+  }
+
+  &__2 {
+    display: inline-block;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 35rem;
+    top: -14rem;
+    background-image: linear-gradient(
+      to right,
+      $color-tertiary-light,
+      $color-tertiary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: distanceAnimation 2s;
+  }
+
+  &__3 {
+    display: inline-block;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 65rem;
+    top: -14rem;
+    background-image: linear-gradient(
+      to right,
+      $color-tertiary-light,
+      $color-tertiary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: distanceAnimation 2s;
+  }
+
+  &__4 {
+    display: inline-block;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 97rem;
+    top: -14rem;
+    background-image: linear-gradient(
+      to right,
+      $color-tertiary-light,
+      $color-tertiary-dark
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: distanceAnimation 2s;
+  }
+}

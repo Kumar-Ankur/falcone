@@ -1,0 +1,69 @@
+.section-result {
+    transition: animation 3s ease-in;
+    position: relative;
+    height: 100vh;
+  
+    &__logo-box {
+        position: absolute;
+        top: 10rem;
+        left: 40%;
+        animation: logoAnimate 3s;
+       
+
+        &:hover {
+            transform: scale(1) translateY(2rem);
+            box-shadow: 1.5rem 1.5rem 4rem rgba($color-black, .5);
+            backface-visibility: hidden;
+        }
+      }
+    
+      &__logo {
+        height: auto;
+        width: 20rem;
+        
+      }     
+}
+
+.section-success {
+    position: absolute;
+    top: 35rem;
+    left: 13%;
+
+    &__heading {
+        
+        font-weight: 600;
+        letter-spacing: 0.25rem;
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase
+        
+    }
+    &__sub1{
+        font-weight: 600;
+        letter-spacing: 0.25rem;
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: -4rem;
+
+    }
+}
+
+.spinner {
+    width: 5rem;
+    height: 2.5rem;
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    box-sizing: border-box;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    border-bottom: 0;
+    animation: spinnerAnimation 0.8s infinite;
+    transition: all 0.8s;
+}

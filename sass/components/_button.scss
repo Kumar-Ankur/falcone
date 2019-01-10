@@ -1,0 +1,190 @@
+.btn {
+    &:link,
+    &:visited {
+      padding: 1.5rem 4rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: $default-font-size;
+    }
+  
+    &:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 0 10px 20px rgba($color-black, 0.2);
+  
+      &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+    }
+  
+    &:active {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 5px 10px rgba($color-black, 0.2);
+    }
+  
+    &--white {
+      background-color: $color-white;
+      color: $color-grey-dark;
+  
+      &::after {
+          background-color: $color-white;
+        }
+    }
+
+    &--green {
+      background-color: $color-primary;
+      color: $color-white;
+  
+      &::after {
+          background-color: $color-white;
+        }
+    }
+  
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+  
+    &--animated {
+      animation: moveInBottom 1s ease-out 0.75s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  .btn-txt {
+    &:link,
+    &:visited {
+      color: $color-primary;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid $color-primary;
+      padding: .3rem;
+      font-size: $default-font-size;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      transform: translateY(-2px);
+      transition: all 0.2s;
+    }
+
+    &:active {
+      box-shadow: 0 1rem 2rem rgba($color-black, 1);
+      transform: translateY(0);
+    }
+  }
+
+  // NAVBAR BUTTON
+
+  .navbtn {
+    &:link,
+    &:visited {
+      padding: 1rem 1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 0.7rem;
+      transition: all 0.2s;
+      position: relative;
+      font-size: $default-font-size;
+    }
+  
+    &:hover {
+      transform: translateY(-0.2rem);
+      box-shadow: 0 10px 20px rgba($color-black, 0.2);
+      background-color: $color-primary;
+      color: $color-white;
+      transition: all 0.3s ease;
+  
+      &::after {
+          transform: scaleX(1.2) scaleY(1.4);
+          opacity: 0;
+        }
+    }
+  
+    &:active {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 5px 10px rgba($color-black, 0.2);
+    }
+  
+    &--white {
+      background-color: $color-white;
+      color: $color-grey-dark;
+  
+      &::after {
+          background-color: $color-white;
+        }
+    }
+
+    &--green {
+      background-color: $color-primary;
+      color: $color-white;
+  
+      &::after {
+          background-color: $color-white;
+        }
+    }
+  
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.7rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+  
+    &--animated {
+      animation: moveInBottom 1s ease-out 0.75s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  .navbtn-txt {
+    &:link,
+    &:visited {
+      color: $color-primary;
+      display: inline-block;
+      text-decoration: none;
+      border-bottom: 1px solid $color-primary;
+      padding: .3rem;
+      font-size: $default-font-size;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-white;
+      box-shadow: 0 1rem 2rem rgba($color-black, .15);
+      transform: translateY(-2px);
+      transition: all 0.2s;
+    }
+
+    &:active {
+      box-shadow: 0 1rem 2rem rgba($color-black, 1);
+      transform: translateY(0);
+    }
+  }
+
+  .reset {
+    position: absolute;
+    top: -18.9rem;
+    left: 115rem;
+  }

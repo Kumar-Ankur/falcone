@@ -1,0 +1,44 @@
+.vechile {
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    background-color: $color-grey-light-1;
+
+    &__1 {
+        left: 5rem;
+        position: absolute
+    }
+
+    &__2 {
+        left: 35rem;
+        position: absolute
+    }
+
+    &__3 {
+        right: 65rem;
+        position: absolute
+    }
+
+    &__4 {
+        right: 35rem;
+        position: absolute
+    }
+}
+
+.section-radio {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+
+    &__enabled {
+        margin-left: 2rem;
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__disabled {
+        margin-left: 2rem
+    }
+}
